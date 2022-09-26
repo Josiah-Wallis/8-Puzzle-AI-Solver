@@ -34,27 +34,7 @@ def manhattan_distance_h(node, problem):            # Manhattan Distance Heurist
         for y in range(len(node.STATE)):
             tile = node.STATE[x][y]         
             
-            #if 0 < tile < 9:
-            #    counter += manhattan_distance((x, y), find_tile(goal.STATE, tile))        
-
-            if tile == 1:
-                counter += manhattan_distance((x, y), find_tile(goal.STATE, 1))
-            elif tile == 2:
-                counter += manhattan_distance((x, y), find_tile(goal.STATE, 2))
-            elif tile == 3:
-                counter += manhattan_distance((x, y), find_tile(goal.STATE, 3))
-            elif tile == 4:
-                counter += manhattan_distance((x, y), find_tile(goal.STATE, 4))
-            elif tile == 5:
-                counter += manhattan_distance((x, y), find_tile(goal.STATE, 5))
-            elif tile == 6:
-                counter += manhattan_distance((x, y), find_tile(goal.STATE, 6))
-            elif tile == 7:
-                counter += manhattan_distance((x, y), find_tile(goal.STATE, 7))
-            elif tile == 8:
-                counter += manhattan_distance((x, y), find_tile(goal.STATE, 8))
-            else:
-                continue
+            if 0 < tile < 9:
+                counter += manhattan_distance((x, y), find_tile(goal.STATE, tile))        
             
-
     return counter + node.PATH_COST
