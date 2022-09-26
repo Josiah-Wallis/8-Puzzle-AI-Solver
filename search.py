@@ -1,7 +1,7 @@
 from data_structures import queue
 from evaluation_functions import path_cost, misplaced_tile_h, manhattan_distance_h
 
-def actions(problem, s):                                                      # Returns a list of applicable operations on state s
+def actions(problem, s):                                                      # Returns a list of available operations on state s
     avail = []
     ops = problem['Operators']
 
